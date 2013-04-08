@@ -5,6 +5,7 @@ linux 下 qt 写的 gui 的串口调试工具,我不是原作者.希望作者不
 基于QT4.6&Linux 2.6的串口调试工具
 zhuhe<zhuhehz@yahoo.com.cn>
 <QQ :704227778>
+http://www.pudn.com/downloads275/sourcecode/unix_linux/detail1251268.html
 
 
 1. 原来貌似16进制发送是将字符按照十六禁止发送的.我改了一下,直接填写十六禁止的数值来发送(更据我的需求)
@@ -12,4 +13,8 @@ zhuhe<zhuhehz@yahoo.com.cn>
 3. 串口设备可以选择下拉,也可以自己修改设备文件,例如使用usb转串时可能是ttyUSB0这样的设备文件
    设备文件是/dev目录下,需要修改则请修改源代码重新编译. 在serialtool.h中宏定义
 4. 可执行文件在bin目录下,32位的.方便直接运行.如果不行,请重新编译(得源码者得天下).
-
+5. 在	Fedora18 
+	Linux 3.7.8-202.fc18.i686 
+	Qt Creator 2.7.0 基于 Qt 4.8.4 (32 bit)
+   下完成编译测试.
+   作者在Ubuntu 10.04下运行正常
